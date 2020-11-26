@@ -1,0 +1,77 @@
+main {
+    height: 100vh;
+}
+
+.main-block {
+    width: 100vw;
+    height: 85vh;
+    overflow: hidden;
+}
+main img {
+    position: relative;
+    width: 100vw;
+}
+#slogan{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2000;
+    top: 360px;
+    left: 120px;
+}
+
+.slogan {
+    width: 28rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.subtitle {
+    margin-top: 0.6rem;
+    width: 17.6rem;
+    background-color: #fff;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+.top-travels .content-block .image-block img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 0.4rem;
+}
+
+.top-travels {
+    width:  100vw;
+    margin-top: 4rem;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.top-travels .content-block {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 22vw);
+    grid-template-rows: repeat(2 , 6rem);
+    
+}
+.top-travels .content-block .image-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.information-for-travel {
+    display: flex;
+    flex-direction:column;
+    margin: 0 0.6rem;
+}
+.information-for-travel .city{
+    font-weight: bold;
+} 
+
+.min {
+    width: 25rem;
+    height: 3rem;
+    top: 0;
+    border: 1px solid #999;
+}

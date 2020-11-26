@@ -1,0 +1,161 @@
+header {
+    width: 100vw;
+    position: relative;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 7rem;
+    height: 7rem;
+}
+.logo {
+    width: 25%;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 8rem;
+    align-items: center;
+    position: absolute;
+    transition: 1s ease;
+    background: transparent;
+}
+
+.container .whatDoYouWant {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.container .whatDoYouWant span {
+    font-weight: 600;
+    color: #fff;
+}
+
+.container .profile  {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+}
+.profile img, .profile p {
+    cursor: pointer;
+}
+.container p, .container img {
+    margin-right: 2.4rem;
+    color: #fff;
+}
+
+.container .user-information {
+    width: 5rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    border-radius: 3rem;
+    padding: 0 0.4rem;
+    
+}
+.container .user-information div.burger{
+    width: 2rem;
+    height: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    
+}
+.burger div {
+    width: 0.9rem;
+    height: 0.06rem;
+    background: #000;
+}
+
+.container .user-information img {
+    margin: 0;
+    cursor: pointer;
+}
+.information-trip {
+    width: clamp(45vw, 55rem, 69rem );
+    position: absolute;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 120px;
+    left: calc(100vw -10px);
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.information-trip .startYourSearch {
+    display: none;
+}
+.information-trip .information-block {
+    padding: 0 2rem;
+    border-right: 1px solid #777;
+}
+
+
+.search {
+    position: absolute;
+    right: 10px;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    background-color: #FF385C !important;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* mudança JS */
+
+.fixed {
+    position: fixed;
+}
+.change  {
+    background: #fff;
+    height: 4rem;
+}
+.change p {
+    color: #000;
+    width: 8rem;
+    font-size: 12pt;
+}
+.change .whatDoYouWant {
+    display: none;
+}
+.change .user-information {
+    border: 1px solid #999;
+}
+.none{
+    display: none;
+}
+.min {
+    width: 20rem;
+    height: 2.5rem;
+    margin-top: 9px;
+    top: 18px;
+    border: 1px solid #999;
+}
+.min .search {
+    width: 2rem;
+    height: 2rem;
+}
+.min .startYourSearch {
+    display: inline;
+    font-weight: 600;
+}
